@@ -24,47 +24,50 @@ Laravel is a web application framework with expressive, elegant syntax. We belie
 
 Laravel is accessible, powerful, and provides tools required for large, robust applications.
 
-## Learning Laravel
+# Simple Article Management Application
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+## Table of Contents
+- [Overview](#overview)
+- [Features](#features)
+- [Technologies Used](#technologies-used)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Contributing](#contributing)
+- [License](#license)
 
-You may also try the [Laravel Bootcamp](https://bootcamp.laravel.com), where you will be guided through building a modern Laravel application from scratch.
+## Overview
+The Simple Article Management Application is a Laravel-based project that provides a straightforward interface for managing articles. Users can view, create, edit, and delete articles easily.
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains thousands of video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+## Features
+- **Homepage:** Displays a list of articles.
+- **Add Article Page:** Allows users to create new articles.
+- **Edit Article Page:** Users can modify existing articles.
+- **Delete Article Functionality:** Users can remove articles.
+- **Middleware:**
+  - Verifies if a user is authenticated before accessing certain routes.
+  - Redirects unauthenticated users to the login page (though login functionality is not included).
 
-## Laravel Sponsors
+## Technologies Used
+- **Framework:** Laravel
+- **Database:** MySQL
+- **ORM:** Eloquent ORM for database interactions
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the [Laravel Partners program](https://partners.laravel.com).
+## Database Configuration
+- The application uses a MySQL database with a table named `articles` that includes the following columns:
+  - `id`: Primary key
+  - `title`: Article title
+  - `content`: Article content
+  - `created_at`: Timestamp for when the article was created
+  - `updated_at`: Timestamp for when the article was last updated
 
-### Premium Partners
+## Installation
+To set up the Simple Article Management Application locally, follow these steps:
 
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[WebReinvent](https://webreinvent.com/)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel/)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[DevSquad](https://devsquad.com/hire-laravel-developers)**
-- **[Jump24](https://jump24.co.uk)**
-- **[Redberry](https://redberry.international/laravel/)**
-- **[Active Logic](https://activelogic.com)**
-- **[byte5](https://byte5.de)**
-- **[OP.GG](https://op.gg)**
+1. **Clone the repository:**
+   ```bash
+   git clone https://github.com/l1918-spec/article-management.git
+   cd article-management
+   
+lydiacharif02@gmail.com
 
-## Contributing
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
-
-## Code of Conduct
-
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
-
-## Security Vulnerabilities
-
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
-
-## License
-
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
->>>>>>> f932127 (Initial commit)
