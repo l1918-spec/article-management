@@ -10,7 +10,7 @@ class CheckAuth
     public function handle($request, Closure $next)
     {
         if (!Auth::check()) {
-            return redirect()->route('login'); // Redirect to login if not authenticated
+            return redirect()->route('login');
         }
         return $next($request);
     }
